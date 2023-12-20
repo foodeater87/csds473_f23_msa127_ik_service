@@ -12,17 +12,9 @@ Run the program using the following command:
 
 ## Step 3
 To test if the program works, input the following command:
-`rosservice call /pose_ik "part_pose:
-  position:
-    x: 0.0
-    y: 0.0
-    z: 0.0
-  orientation:
-    x: 0.0
-    y: 0.0
-    z: 0.0
-    w: 0.0"`
-The output of the above function should display the number of solutions and the joint solutions themselves.
+`rosrun ik_service ik_client_node`
+
+The output of the above function should display "Call to ik_service returned [4] solutions"
 
 ## Useful Links
 ARIAC 2019 Documentation Page:
